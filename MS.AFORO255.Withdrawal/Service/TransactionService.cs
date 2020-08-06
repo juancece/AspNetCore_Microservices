@@ -12,14 +12,14 @@ namespace MS.AFORO255.Withdrawal.Service
             _transactionRepository = transactionRepository;
         }
 
-        public Transaction Deposit(Transaction transaction)
+        public Transaction Withdrawal(Transaction transaction)
         {
-            return _transactionRepository.Deposit(transaction);
+            return _transactionRepository.Withdrawal(transaction);
         }
 
-        public Transaction DepositReverse(Transaction transaction)
+        public Transaction WithdrawalReverse(Transaction transaction)
         {
-            return _transactionRepository.DepositReverse(transaction);
+            return _transactionRepository.WithdrawalReverse(transaction);
         }
     }
 }

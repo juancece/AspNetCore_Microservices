@@ -4,7 +4,7 @@ namespace MS.AFORO255.Withdrawal.Service
 {
     public interface ITransactionService
     {
-        Transaction Deposit(Transaction transaction);
-        Transaction DepositReverse(Transaction transaction);
+        Transaction Withdrawal(Transaction transaction);
+        Transaction WithdrawalReverse(Transaction transaction);
     }
 }

@@ -4,7 +4,7 @@ namespace MS.AFORO255.Withdrawal.Repository
 {
     public interface ITransactionRepository
     {
-        Transaction Deposit(Transaction transaction);
-        Transaction DepositReverse(Transaction transaction);
+        Transaction Withdrawal(Transaction transaction);
+        Transaction WithdrawalReverse(Transaction transaction);
     }
 }

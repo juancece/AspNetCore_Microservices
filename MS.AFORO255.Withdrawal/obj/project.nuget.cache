@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bxPVWi9eSIHWTOuK22diayWTiFNd0DByo2FFFVPLxt9jtIB6YfKADBm5/L5gsR3LaZ47HRhLeDOY9GY/Y+ltZw==",
+  "dgSpecHash": "bmvgO/RLwgCrOFBAeqCra66dDfMY/Zruk6IZ46M5kHWvaq71fnOXJ9GSPHLsJUlvDGFalCifPEQJInj7lc6L8Q==",
   "success": true,
   "projectFilePath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Withdrawal/MS.AFORO255.Withdrawal.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "/Users/juan/.nuget/packages/microsoft.entityframeworkcore/3.1.6/microsoft.entityframeworkcore.3.1.6.nupkg.sha512",
     "/Users/juan/.nuget/packages/microsoft.entityframeworkcore.abstractions/3.1.6/microsoft.entityframeworkcore.abstractions.3.1.6.nupkg.sha512",
     "/Users/juan/.nuget/packages/microsoft.entityframeworkcore.analyzers/3.1.6/microsoft.entityframeworkcore.analyzers.3.1.6.nupkg.sha512",
+    "/Users/juan/.nuget/packages/microsoft.entityframeworkcore.relational/3.1.4/microsoft.entityframeworkcore.relational.3.1.4.nupkg.sha512",
     "/Users/juan/.nuget/packages/microsoft.extensions.caching.abstractions/3.1.6/microsoft.extensions.caching.abstractions.3.1.6.nupkg.sha512",
     "/Users/juan/.nuget/packages/microsoft.extensions.caching.memory/3.1.6/microsoft.extensions.caching.memory.3.1.6.nupkg.sha512",
     "/Users/juan/.nuget/packages/microsoft.extensions.configuration/3.1.6/microsoft.extensions.configuration.3.1.6.nupkg.sha512",
@@ -20,9 +21,12 @@
     "/Users/juan/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.6/microsoft.extensions.logging.abstractions.3.1.6.nupkg.sha512",
     "/Users/juan/.nuget/packages/microsoft.extensions.options/3.1.6/microsoft.extensions.options.3.1.6.nupkg.sha512",
     "/Users/juan/.nuget/packages/microsoft.extensions.primitives/3.1.6/microsoft.extensions.primitives.3.1.6.nupkg.sha512",
+    "/Users/juan/.nuget/packages/npgsql/4.1.3.1/npgsql.4.1.3.1.nupkg.sha512",
+    "/Users/juan/.nuget/packages/npgsql.entityframeworkcore.postgresql/3.1.4/npgsql.entityframeworkcore.postgresql.3.1.4.nupkg.sha512",
     "/Users/juan/.nuget/packages/system.collections.immutable/1.7.1/system.collections.immutable.1.7.1.nupkg.sha512",
     "/Users/juan/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
-    "/Users/juan/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+    "/Users/juan/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+    "/Users/juan/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
   ],
   "logs": []
 }

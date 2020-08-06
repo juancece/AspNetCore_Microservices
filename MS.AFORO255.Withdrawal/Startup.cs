@@ -1,15 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using MS.AFORO255.Withdrawal.Repository;
+using MS.AFORO255.Withdrawal.Repository.Data;
+using MS.AFORO255.Withdrawal.Service;
 
 namespace MS.AFORO255.Withdrawal
 {
@@ -26,6 +23,14 @@ namespace MS.AFORO255.Withdrawal
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<ContextDatabase>(opt =>
+            {
+                opt.UseNpgsql(Configuration["postgres:cn"]);
+            });
+
+            services.AddScoped<ITransactionService, TransactionService>();
+            services.AddScoped<ITransactionRepository, TransactionRepository>();
+            services.AddScoped<IContextDatabase, ContextDatabase>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

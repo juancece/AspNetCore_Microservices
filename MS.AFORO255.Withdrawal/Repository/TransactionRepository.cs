@@ -12,14 +12,14 @@ namespace MS.AFORO255.Withdrawal.Repository
             _contextDatabase = contextDatabase;
         }
 
-        public Transaction Deposit(Transaction transaction)
+        public Transaction Withdrawal(Transaction transaction)
         {
             _contextDatabase.Transaction.Add(transaction);
             _contextDatabase.SaveChanges();
             return transaction;
         }
 
-        public Transaction DepositReverse(Transaction transaction)
+        public Transaction WithdrawalReverse(Transaction transaction)
         {
             _contextDatabase.Transaction.Add(transaction);
             _contextDatabase.SaveChanges();
