@@ -17,7 +17,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Cross.RabbitMQ/MS.AFORO255.Cross.RabbitMQ.csproj": {
+            "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Cross.RabbitMQ/MS.AFORO255.Cross.RabbitMQ.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -29,6 +33,10 @@
   "frameworks": {
     "netcoreapp3.1": {
       "dependencies": {
+        "MediatR.Extensions.Microsoft.DependencyInjection": {
+          "target": "Package",
+          "version": "[8.1.0, )"
+        },
         "Microsoft.EntityFrameworkCore": {
           "target": "Package",
           "version": "[3.1.6, )"
