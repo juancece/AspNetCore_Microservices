@@ -15,6 +15,6 @@ namespace MS.AFORO255.Withdrawal.Model
         public string CreationDate { get; set; }
         [Column("accountid")]
         public int AccountId { get; set; }
-        
+
     }
 }

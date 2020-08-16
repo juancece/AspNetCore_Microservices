@@ -13,5 +13,10 @@
       <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.21" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MS.AFORO255.Cross.RabbitMQ\MS.AFORO255.Cross.RabbitMQ.csproj" />
+      <ProjectReference Include="..\MS.AFORO255.Deposit\MS.AFORO255.Deposit.csproj" />
+    </ItemGroup>
+
 
 </Project>

@@ -4,5 +4,6 @@ namespace MS.AFORO255.Withdrawal.DTO
     {
         public int AccountId { get; set; }
         public decimal Amount { get; set; }
+
     }
 }

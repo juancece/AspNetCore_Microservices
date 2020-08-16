@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj": {}
+    "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj": {}
   },
   "projects": {
-    "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj": {
+    "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj",
+        "projectUniqueName": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj",
         "projectName": "MS.AFORO255.Cross.Jwt",
-        "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj",
+        "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj",
         "packagesPath": "/Users/juan/.nuget/packages/",
-        "outputPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Cross.Jwt/obj/",
+        "outputPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

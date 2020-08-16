@@ -1,5 +1,3 @@
-using System;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MS.AFORO255.Deposit.Model
@@ -17,6 +15,6 @@ namespace MS.AFORO255.Deposit.Model
         public string CreationDate { get; set; }
         [Column("accountid")]
         public int AccountId { get; set; }
-        
+
     }
 }

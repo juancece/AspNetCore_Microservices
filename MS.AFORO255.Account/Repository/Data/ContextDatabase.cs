@@ -3,7 +3,7 @@ using MS.AFORO255.Account.Model;
 
 namespace MS.AFORO255.Account.Repository.Data
 {
-    public class ContextDatabase :DbContext, IContextDatabase
+    public class ContextDatabase : DbContext, IContextDatabase
     {
         public ContextDatabase(DbContextOptions<ContextDatabase> options) : base(options)
         {
@@ -11,7 +11,6 @@ namespace MS.AFORO255.Account.Repository.Data
 
         public DbSet<Model.Account> Account { get; set; }
         public DbSet<Customer> Customer { get; set; }
-
         public DbContext Instance => this;
     }
 }

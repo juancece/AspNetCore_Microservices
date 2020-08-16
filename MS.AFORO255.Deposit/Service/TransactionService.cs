@@ -3,7 +3,7 @@ using MS.AFORO255.Deposit.Repository;
 
 namespace MS.AFORO255.Deposit.Service
 {
-    class TransactionService : ITransactionService
+    public class TransactionService : ITransactionService
     {
         private readonly ITransactionRepository _transactionRepository;
 

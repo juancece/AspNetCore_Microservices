@@ -3,7 +3,7 @@ using MS.AFORO255.Withdrawal.Repository;
 
 namespace MS.AFORO255.Withdrawal.Service
 {
-    class TransactionService : ITransactionService
+    public class TransactionService : ITransactionService
     {
         private readonly ITransactionRepository _transactionRepository;
 

@@ -2,9 +2,9 @@ using MS.AFORO255.Cross.RabbitMQ.Src.Events;
 
 namespace MS.AFORO255.Deposit.RabbitMQ.Events
 {
-    public class DepositCreateEvent : Event
+    public class DepositCreatedEvent : Event
     {
-        public DepositCreateEvent(int idTransaction, decimal amount, string type, string creationDate, int accountId)
+        public DepositCreatedEvent(int idTransaction, decimal amount, string type, string creationDate, int accountId)
         {
             IdTransaction = idTransaction;
             Amount = amount;

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Security/MS.AFORO255.Security.csproj",
+    "projectUniqueName": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Security/MS.AFORO255.Security.csproj",
     "projectName": "MS.AFORO255.Security",
-    "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Security/MS.AFORO255.Security.csproj",
-    "outputPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Security/obj/",
+    "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Security/MS.AFORO255.Security.csproj",
+    "outputPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Security/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -18,8 +18,8 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
-          "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj": {
-            "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj"
+          "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj": {
+            "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj"
           }
         }
       }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "At1xK9AZ8Gvm6FPDPYcCBwYMCg2WkVQhwfrukNoMVs5laS3din0x+Ol+1f3NlmTcjR/w4i3LyR82ZskJf5WUQA==",
+  "dgSpecHash": "f+wkwBuPFYa8ZzFV9D1IAtwS6xtB6oD9cj+jUbZuwyzWOnlAfgeTQScIsype4HRXaE7eaZYxfvReK6ZDHwTplg==",
   "success": true,
-  "projectFilePath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Security/MS.AFORO255.Security.csproj",
+  "projectFilePath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Security/MS.AFORO255.Security.csproj",
   "expectedPackageFiles": [
     "/Users/juan/.nuget/packages/bouncycastle.netcore/1.8.3/bouncycastle.netcore.1.8.3.nupkg.sha512",
     "/Users/juan/.nuget/packages/google.protobuf/3.6.1/google.protobuf.3.6.1.nupkg.sha512",

@@ -6,6 +6,6 @@ namespace MS.AFORO255.Account.Service
     {
         IEnumerable<Model.Account> GetAll();
         bool Deposit(Model.Account account);
-        bool WithDrawal(Model.Account account);
+        bool Withdrawal(Model.Account account);
     }
 }

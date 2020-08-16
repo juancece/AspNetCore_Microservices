@@ -4937,11 +4937,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Account/MS.AFORO255.Account.csproj",
+      "projectUniqueName": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Account/MS.AFORO255.Account.csproj",
       "projectName": "MS.AFORO255.Account",
-      "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Account/MS.AFORO255.Account.csproj",
+      "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Account/MS.AFORO255.Account.csproj",
       "packagesPath": "/Users/juan/.nuget/packages/",
-      "outputPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Account/obj/",
+      "outputPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Account/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

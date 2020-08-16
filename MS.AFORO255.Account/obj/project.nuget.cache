@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8ZK5276KCsD4qiJfDpo8BplW/dpijFbJFnlytAE3bZfjaPSe6W6zmFhW8ibhVSkkJ2jN41zS49E7PJoe/NzmDQ==",
+  "dgSpecHash": "z19oXj3YylV75QYFPdDwXUH0W4syTAlshMZ9EHK4dyW8DSi8/1GFrrDL8tElB2sxr3VdnI1Ng4GZyfrIiJOwrQ==",
   "success": true,
-  "projectFilePath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Account/MS.AFORO255.Account.csproj",
+  "projectFilePath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Account/MS.AFORO255.Account.csproj",
   "expectedPackageFiles": [
     "/Users/juan/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/juan/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

@@ -1,11 +1,10 @@
-
 using MS.AFORO255.Cross.RabbitMQ.Src.Commands;
 
 namespace MS.AFORO255.Deposit.RabbitMQ.Commands
 {
-    public class DepositCommand : Command
+    public class DepositCommand: Command
     {
-        public int IdTransaction { get; protected set; }
+        public int IdTransaction { get; protected  set; }
         public decimal Amount { get; protected set; }
         public string Type { get; protected set; }
         public string CreationDate { get; protected set; }

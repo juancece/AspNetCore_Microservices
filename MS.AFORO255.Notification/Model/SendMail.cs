@@ -6,7 +6,6 @@ namespace MS.AFORO255.Notification.Model
     {
         [Key]
         public int SendMailId { get; set; }
-
         public string SendDate { get; set; }
         public int AccountId { get; set; }
     }

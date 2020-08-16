@@ -1,9 +1,7 @@
-using System.Linq;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using MS.AFORO255.Account.DTO;
 using MS.AFORO255.Account.Service;
+using System.Linq;
 
 namespace MS.AFORO255.Account.Controllers
 {
@@ -24,39 +22,37 @@ namespace MS.AFORO255.Account.Controllers
             return Ok(_accountService.GetAll());
         }
 
-        [HttpPost("Deposit/")]
+        [HttpPost("Deposit")]
         public IActionResult Deposit([FromBody] AccountRequest request)
         {
             var result = _accountService.GetAll().Where(x => x.IdAccount == request.IdAccount).FirstOrDefault();
-            Model.Account account = new Model.Account
+            Model.Account account = new Model.Account()
             {
                 IdAccount = request.IdAccount,
                 IdCustomer = result.IdCustomer,
                 TotalAmount = result.TotalAmount + request.Amount,
                 Customer = result.Customer
             };
-
             _accountService.Deposit(account);
             return Ok();
         }
 
-        [HttpPost("Withdrawal/")]
+        [HttpPost("Withdrawal")]
         public IActionResult Withdrawal([FromBody] AccountRequest request)
         {
             var result = _accountService.GetAll().Where(x => x.IdAccount == request.IdAccount).FirstOrDefault();
             if (result.TotalAmount < request.Amount)
             {
-                return BadRequest(new {message = "The indicated amount cannot be withdrawn"});
+                return BadRequest(new { message = "The indicated amount cannot be withdrawal" });
             }
-            Model.Account account = new Model.Account
+            Model.Account account = new Model.Account()
             {
                 IdAccount = request.IdAccount,
                 IdCustomer = result.IdCustomer,
                 TotalAmount = result.TotalAmount - request.Amount,
                 Customer = result.Customer
             };
-
-            _accountService.WithDrawal(account);
+            _accountService.Withdrawal(account);
             return Ok();
         }
     }

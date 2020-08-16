@@ -8,6 +8,7 @@ using MS.AFORO255.Account.Repository;
 using MS.AFORO255.Account.Repository.Data;
 using MS.AFORO255.Account.Service;
 
+
 namespace MS.AFORO255.Account
 {
     public class Startup
@@ -23,14 +24,17 @@ namespace MS.AFORO255.Account
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<ContextDatabase>(opt =>
-            {
-                opt.UseSqlServer(Configuration["sql:cn"]);
-            });
+
+            services.AddDbContext<ContextDatabase>(
+                options =>
+                {
+                    options.UseSqlServer(Configuration["sql:cn"]);
+                });
 
             services.AddScoped<IAccountService, AccountService>();
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IContextDatabase, ContextDatabase>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,13 +45,15 @@ namespace MS.AFORO255.Account
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
-
             app.UseRouting();
-            
-            app.UseAuthorization();
 
-            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            app.UseAuthorization();
+            
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
     }
 }

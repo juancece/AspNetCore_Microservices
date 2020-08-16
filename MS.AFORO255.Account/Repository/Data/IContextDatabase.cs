@@ -7,7 +7,6 @@ namespace MS.AFORO255.Account.Repository.Data
     {
         DbSet<Model.Account> Account { get; set; }
         DbSet<Customer> Customer { get; set; }
-        
         int SaveChanges();
     }
 }

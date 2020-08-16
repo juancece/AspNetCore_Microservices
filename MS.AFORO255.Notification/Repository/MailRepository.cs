@@ -9,7 +9,7 @@ namespace MS.AFORO255.Notification.Repository
 
         public MailRepository(IContextDatabase contextDatabase)
         {
-            _contextDatabase = contextDatabase;
+            this._contextDatabase = contextDatabase;
         }
 
         public bool Add(SendMail sendMail)

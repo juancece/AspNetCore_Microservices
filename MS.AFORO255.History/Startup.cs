@@ -18,6 +18,8 @@ namespace MS.AFORO255.History
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
+            
         }
 
         public IConfiguration Configuration { get; }
@@ -26,16 +28,20 @@ namespace MS.AFORO255.History
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
             services.AddScoped<IHistoryService, HistoryService>();
             services.AddScoped<IRepositoryHistory, RepositoryHistory>();
 
-            /* Start - RabbitMQ */
+            /*Start - RabbitMQ*/
             services.AddMediatR(typeof(Startup));
             services.AddRabbitMQ();
 
             services.AddTransient<DepositEventHandler>();
+            services.AddTransient<WithdrawalEventHandler>();
             services.AddTransient<IEventHandler<DepositCreatedEvent>, DepositEventHandler>();
-            /* End - RabbitMQ */
+            services.AddTransient<IEventHandler<WithdrawalCreatedEvent>, WithdrawalEventHandler>();
+            /*End - RabbitMQ*/
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,13 +52,15 @@ namespace MS.AFORO255.History
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
-
             app.UseRouting();
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
+
 
             ConfigureEventBus(app);
         }
@@ -61,6 +69,8 @@ namespace MS.AFORO255.History
         {
             var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
             eventBus.Subscribe<DepositCreatedEvent, DepositEventHandler>();
+            eventBus.Subscribe<WithdrawalCreatedEvent, WithdrawalEventHandler>();
         }
+
     }
 }

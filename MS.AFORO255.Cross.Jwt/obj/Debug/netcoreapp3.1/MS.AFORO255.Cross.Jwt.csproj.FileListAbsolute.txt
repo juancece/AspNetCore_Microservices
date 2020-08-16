@@ -6,3 +6,11 @@
 /Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Cross.Jwt/obj/Debug/netcoreapp3.1/MS.AFORO255.Cross.Jwt.AssemblyInfo.cs
 /Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Cross.Jwt/obj/Debug/netcoreapp3.1/MS.AFORO255.Cross.Jwt.dll
 /Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Cross.Jwt/obj/Debug/netcoreapp3.1/MS.AFORO255.Cross.Jwt.pdb
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/bin/Debug/netcoreapp3.1/MS.AFORO255.Cross.Jwt.deps.json
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/bin/Debug/netcoreapp3.1/MS.AFORO255.Cross.Jwt.dll
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/bin/Debug/netcoreapp3.1/MS.AFORO255.Cross.Jwt.pdb
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/obj/Debug/netcoreapp3.1/MS.AFORO255.Cross.Jwt.csprojAssemblyReference.cache
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/obj/Debug/netcoreapp3.1/MS.AFORO255.Cross.Jwt.AssemblyInfoInputs.cache
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/obj/Debug/netcoreapp3.1/MS.AFORO255.Cross.Jwt.AssemblyInfo.cs
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/obj/Debug/netcoreapp3.1/MS.AFORO255.Cross.Jwt.dll
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/obj/Debug/netcoreapp3.1/MS.AFORO255.Cross.Jwt.pdb

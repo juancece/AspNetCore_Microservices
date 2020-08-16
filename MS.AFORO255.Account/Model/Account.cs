@@ -10,7 +10,6 @@ namespace MS.AFORO255.Account.Model
         public decimal TotalAmount { get; set; }
         [ForeignKey("Customer")]
         public int IdCustomer { get; set; }
-
         public Customer Customer { get; set; }
     }
 }

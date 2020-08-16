@@ -1,8 +1,8 @@
-using System.Threading.Tasks;
 using MS.AFORO255.Cross.RabbitMQ.Src.Bus;
 using MS.AFORO255.History.Model;
 using MS.AFORO255.History.RabbitMQ.Events;
 using MS.AFORO255.History.Service;
+using System.Threading.Tasks;
 
 namespace MS.AFORO255.History.RabbitMQ.EventHandlers
 {
@@ -17,15 +17,14 @@ namespace MS.AFORO255.History.RabbitMQ.EventHandlers
 
         public Task Handle(DepositCreatedEvent @event)
         {
-            _historyService.Add(new HistoryTransaction
-            {
+            _historyService.Add(new HistoryTransaction() { 
                 IdTransaction = @event.IdTransaction,
                 Amount = @event.Amount,
                 Type = @event.Type,
                 CreationDate = @event.CreationDate,
                 AccountId = @event.AccountId
+
             });
-            
             return Task.CompletedTask;
         }
     }

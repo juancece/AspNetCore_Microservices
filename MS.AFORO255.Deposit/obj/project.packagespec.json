@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Deposit/MS.AFORO255.Deposit.csproj",
+    "projectUniqueName": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/MS.AFORO255.Deposit.csproj",
     "projectName": "MS.AFORO255.Deposit",
-    "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Deposit/MS.AFORO255.Deposit.csproj",
-    "outputPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Deposit/obj/",
+    "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/MS.AFORO255.Deposit.csproj",
+    "outputPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -18,8 +18,11 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
-          "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Cross.RabbitMQ/MS.AFORO255.Cross.RabbitMQ.csproj": {
-            "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255/MS.AFORO255.Cross.RabbitMQ/MS.AFORO255.Cross.RabbitMQ.csproj"
+          "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Proxy/MS.AFORO255.Cross.Proxy.csproj": {
+            "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Proxy/MS.AFORO255.Cross.Proxy.csproj"
+          },
+          "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.RabbitMQ/MS.AFORO255.Cross.RabbitMQ.csproj": {
+            "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.RabbitMQ/MS.AFORO255.Cross.RabbitMQ.csproj"
           }
         }
       }
@@ -44,6 +47,10 @@
         "Npgsql.EntityFrameworkCore.PostgreSQL": {
           "target": "Package",
           "version": "[3.1.4, )"
+        },
+        "Polly": {
+          "target": "Package",
+          "version": "[7.2.1, )"
         }
       },
       "imports": [

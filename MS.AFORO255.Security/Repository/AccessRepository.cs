@@ -1,7 +1,7 @@
-using System.Collections.Generic;
-using System.Linq;
 using MS.AFORO255.Security.Model;
 using MS.AFORO255.Security.Repository.Data;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace MS.AFORO255.Security.Repository
 {
@@ -13,6 +13,7 @@ namespace MS.AFORO255.Security.Repository
         {
             _contextDatabase = contextDatabase;
         }
+
         public IEnumerable<Access> GetAll()
         {
             return _contextDatabase.Access.ToList();

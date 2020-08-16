@@ -1,7 +1,7 @@
-using System.Collections.Generic;
-using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using MS.AFORO255.Account.Repository.Data;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace MS.AFORO255.Account.Repository
 {
@@ -9,14 +9,9 @@ namespace MS.AFORO255.Account.Repository
     {
         private readonly IContextDatabase _contextDatabase;
 
-        public AccountRepository(IContextDatabase contextDatabase)
+        public AccountRepository(IContextDatabase contextDatabase )
         {
             _contextDatabase = contextDatabase;
-        }
-
-        public IEnumerable<Model.Account> GetAll()
-        {
-            return _contextDatabase.Account.Include(x => x.Customer).AsNoTracking().ToList();
         }
 
         public bool Deposit(Model.Account account)
@@ -26,7 +21,13 @@ namespace MS.AFORO255.Account.Repository
             return true;
         }
 
-        public bool WithDrawal(Model.Account account)
+        public IEnumerable<Model.Account> GetAll()
+        {
+            return _contextDatabase.Account.Include(x => x.Customer)
+                .AsNoTracking().ToList();
+        }
+
+        public bool Withdrawal(Model.Account account)
         {
             _contextDatabase.Account.Update(account);
             _contextDatabase.SaveChanges();

@@ -7,16 +7,20 @@ namespace MS.AFORO255.History.Repository
     public class RepositoryHistory : IRepositoryHistory
     {
         private readonly IMongoDatabase _database = null;
-        
+
         public RepositoryHistory(IConfiguration configuration)
         {
             var client = new MongoClient(configuration["mongo:cn"]);
             if (client != null)
-            {
                 _database = client.GetDatabase(configuration["mongo:database"]);
-            }
         }
 
-        public IMongoCollection<HistoryTransaction> HistoryCredit => _database.GetCollection<HistoryTransaction>("HistoryTransaction");
+        public IMongoCollection<HistoryTransaction> HistoryCredit 
+        {
+            get
+            {
+                return _database.GetCollection<HistoryTransaction>("HistoryTransaction");
+            }
+        }
     }
 }

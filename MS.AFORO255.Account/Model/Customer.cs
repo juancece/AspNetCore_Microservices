@@ -7,5 +7,6 @@ namespace MS.AFORO255.Account.Model
         [Key]
         public int IdCustomer { get; set; }
         public string FullName { get; set; }
+
     }
 }

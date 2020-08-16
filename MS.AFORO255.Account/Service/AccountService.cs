@@ -1,5 +1,5 @@
-using System.Collections.Generic;
 using MS.AFORO255.Account.Repository;
+using System.Collections.Generic;
 
 namespace MS.AFORO255.Account.Service
 {
@@ -12,19 +12,19 @@ namespace MS.AFORO255.Account.Service
             _accountRepository = accountRepository;
         }
 
-        public IEnumerable<Model.Account> GetAll()
-        {
-            return _accountRepository.GetAll();
-        }
-
         public bool Deposit(Model.Account account)
         {
             return _accountRepository.Deposit(account);
         }
 
-        public bool WithDrawal(Model.Account account)
+        public IEnumerable<Model.Account> GetAll()
         {
-            return _accountRepository.WithDrawal(account);
+            return _accountRepository.GetAll();
+        }
+
+        public bool Withdrawal(Model.Account account)
+        {
+            return _accountRepository.Withdrawal(account);
         }
     }
 }
