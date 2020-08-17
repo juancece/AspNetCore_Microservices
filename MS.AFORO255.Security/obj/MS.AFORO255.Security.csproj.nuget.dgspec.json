@@ -4,6 +4,94 @@
     "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Security/MS.AFORO255.Security.csproj": {}
   },
   "projects": {
+    "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj",
+        "projectName": "MS.AFORO255.Cross.Consul",
+        "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj",
+        "packagesPath": "/Users/juan/.nuget/packages/",
+        "outputPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/juan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Consul": {
+              "target": "Package",
+              "version": "[0.7.2.6, )"
+            },
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -90,6 +178,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj": {
+                "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj"
+              },
               "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj": {
                 "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj"
               }
@@ -112,6 +203,14 @@
             "MySql.Data.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.21, )"
+            },
+            "Steeltoe.Extensions.Configuration.ConfigServerBase": {
+              "target": "Package",
+              "version": "[2.4.4, )"
+            },
+            "Steeltoe.Extensions.Configuration.ConfigServerCore": {
+              "target": "Package",
+              "version": "[2.4.4, )"
             }
           },
           "imports": [

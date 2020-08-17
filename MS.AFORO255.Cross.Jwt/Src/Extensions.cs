@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -22,8 +21,8 @@ namespace MS.AFORO255.Cross.Jwt.Src
             if (options.Enabled)
             {
                 var signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(options.Key));
-                services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                        .AddJwtBearer(opt =>
+                services.AddAuthentication()
+                        .AddJwtBearer("SECURITY-TOKEN",opt =>
                         {
                             opt.TokenValidationParameters = new TokenValidationParameters
                             {

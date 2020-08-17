@@ -18,6 +18,9 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
+          "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj": {
+            "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj"
+          },
           "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj": {
             "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj"
           }
@@ -40,6 +43,14 @@
         "MySql.Data.EntityFrameworkCore": {
           "target": "Package",
           "version": "[8.0.21, )"
+        },
+        "Steeltoe.Extensions.Configuration.ConfigServerBase": {
+          "target": "Package",
+          "version": "[2.4.4, )"
+        },
+        "Steeltoe.Extensions.Configuration.ConfigServerCore": {
+          "target": "Package",
+          "version": "[2.4.4, )"
         }
       },
       "imports": [

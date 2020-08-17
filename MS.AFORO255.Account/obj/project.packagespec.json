@@ -17,7 +17,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj": {
+            "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -36,6 +40,10 @@
         "Microsoft.EntityFrameworkCore.SqlServer": {
           "target": "Package",
           "version": "[3.1.6, )"
+        },
+        "Steeltoe.Extensions.Configuration.ConfigServerCore": {
+          "target": "Package",
+          "version": "[2.4.4, )"
         }
       },
       "imports": [

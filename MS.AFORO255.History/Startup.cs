@@ -1,9 +1,13 @@
+using Consul;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MS.AFORO255.Cross.Consul.Consul;
+using MS.AFORO255.Cross.Consul.Mvc;
 using MS.AFORO255.Cross.RabbitMQ.Src;
 using MS.AFORO255.Cross.RabbitMQ.Src.Bus;
 using MS.AFORO255.History.RabbitMQ.EventHandlers;
@@ -18,8 +22,6 @@ namespace MS.AFORO255.History
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-
-            
         }
 
         public IConfiguration Configuration { get; }
@@ -41,11 +43,18 @@ namespace MS.AFORO255.History
             services.AddTransient<IEventHandler<DepositCreatedEvent>, DepositEventHandler>();
             services.AddTransient<IEventHandler<WithdrawalCreatedEvent>, WithdrawalEventHandler>();
             /*End - RabbitMQ*/
+            
+            /* Start - Consul */
+            services.AddSingleton<IServiceId, ServiceId>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddConsul();
+            /* End - Consul */
 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,
+            IHostApplicationLifetime hostApplicationLifetime, IConsulClient consulClient)
         {
             if (env.IsDevelopment())
             {
@@ -63,6 +72,12 @@ namespace MS.AFORO255.History
 
 
             ConfigureEventBus(app);
+            
+            var serviceId = app.UseConsul();
+            hostApplicationLifetime.ApplicationStopped.Register(() =>
+            {
+                consulClient.Agent.ServiceDeregister(serviceId);
+            });
         }
 
         private void ConfigureEventBus(IApplicationBuilder app)

@@ -31,7 +31,8 @@ namespace MS.AFORO255.Notification
             services.AddDbContext<ContextDatabase>(
                opt =>
                {
-                   opt.UseMySQL(Configuration["mariadb:cn"]);
+                   //opt.UseMySQL(Configuration["mariadb:cn"]);
+                   opt.UseMySQL(Configuration["cnmariadb"]);
                });
 
             services.AddScoped<IMailRepository, MailRepository>();

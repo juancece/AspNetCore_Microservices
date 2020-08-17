@@ -10,7 +10,8 @@ namespace MS.AFORO255.History.Repository
 
         public RepositoryHistory(IConfiguration configuration)
         {
-            var client = new MongoClient(configuration["mongo:cn"]);
+            //var client = new MongoClient(configuration["mongo:cn"]);
+            var client = new MongoClient(configuration["cnmongo"]);
             if (client != null)
                 _database = client.GetDatabase(configuration["mongo:database"]);
         }

@@ -99,3 +99,14 @@
 /Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/obj/Debug/netcoreapp3.1/MS.AFORO255.Deposit.csproj.CopyComplete
 /Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/obj/Debug/netcoreapp3.1/MS.AFORO255.Deposit.dll
 /Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/obj/Debug/netcoreapp3.1/MS.AFORO255.Deposit.pdb
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/bin/Debug/netcoreapp3.1/Consul.dll
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netstandard1.3/System.Net.Http.WinHttpHandler.dll
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard1.3/System.Net.Http.WinHttpHandler.dll
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/bin/Debug/netcoreapp3.1/MS.AFORO255.Cross.Consul.dll
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/bin/Debug/netcoreapp3.1/MS.AFORO255.Cross.Consul.pdb
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/bin/Debug/netcoreapp3.1/Steeltoe.Common.dll
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/bin/Debug/netcoreapp3.1/Steeltoe.Common.Http.dll
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/bin/Debug/netcoreapp3.1/Steeltoe.Extensions.Configuration.CloudFoundryBase.dll
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/bin/Debug/netcoreapp3.1/Steeltoe.Extensions.Configuration.ConfigServerBase.dll
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/bin/Debug/netcoreapp3.1/Steeltoe.Extensions.Configuration.ConfigServerCore.dll
+/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Deposit/bin/Debug/netcoreapp3.1/Steeltoe.Extensions.Configuration.PlaceholderBase.dll
