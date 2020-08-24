@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MS.AFORO255.Cross.Consul.Consul;
 using MS.AFORO255.Cross.Consul.Mvc;
+using MS.AFORO255.Cross.Jaeger.Jaeger;
 using MS.AFORO255.Cross.Jwt.Src;
 using MS.AFORO255.Security.Repository;
 using MS.AFORO255.Security.Repository.Data;
@@ -50,8 +51,8 @@ namespace MS.AFORO255.Security
             services.AddConsul();
             /* End - Consul */
 
-
-
+            services.AddJaeger();
+            services.AddOpenTracing();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

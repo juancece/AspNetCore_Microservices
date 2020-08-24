@@ -7,13 +7,18 @@
     <ItemGroup>
       <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
       <PackageReference Include="MongoDB.Driver" Version="2.11.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+      <PackageReference Include="OpenTracing.Contrib.NetCore" Version="0.6.2" />
+      <PackageReference Include="StackExchange.Redis" Version="2.1.58" />
       <PackageReference Include="Steeltoe.Extensions.Configuration.ConfigServerBase" Version="2.4.4" />
       <PackageReference Include="Steeltoe.Extensions.Configuration.ConfigServerCore" Version="2.4.4" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\..\MS.AFORO255.Cross.Consul\MS.AFORO255.Cross.Consul.csproj" />
+      <ProjectReference Include="..\MS.AFORO255.Cross.Jaeger\MS.AFORO255.Cross.Jaeger.csproj" />
       <ProjectReference Include="..\MS.AFORO255.Cross.RabbitMQ\MS.AFORO255.Cross.RabbitMQ.csproj" />
+      <ProjectReference Include="..\MS.AFORO255.Cross.Redis\MS.AFORO255.Cross.Redis.csproj" />
     </ItemGroup>
 
 

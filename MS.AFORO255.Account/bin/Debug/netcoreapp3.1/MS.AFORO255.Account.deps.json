@@ -25,8 +25,10 @@
       "MS.AFORO255.Account/1.0.0": {
         "dependencies": {
           "MS.AFORO255.Cross.Consul": "1.0.0",
+          "MS.AFORO255.Cross.Jaeger": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.6",
+          "OpenTracing.Contrib.NetCore": "0.6.2",
           "Steeltoe.Extensions.Configuration.ConfigServerCore": "2.4.4",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "3.1.0.0",
@@ -328,6 +330,49 @@
           "lib/netstandard1.3/Consul.dll": {}
         }
       },
+      "Jaeger/0.3.6": {
+        "dependencies": {
+          "Jaeger.Thrift": "0.3.6",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "3.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.6",
+          "Newtonsoft.Json": "11.0.2",
+          "OpenTracing": "0.12.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Jaeger.dll": {
+            "assemblyVersion": "0.3.6.0",
+            "fileVersion": "0.3.6.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Jaeger.dll": {}
+        }
+      },
+      "Jaeger.Thrift/0.3.6": {
+        "dependencies": {
+          "Jaeger.Thrift.VendoredThrift": "0.3.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Jaeger.Thrift.dll": {
+            "assemblyVersion": "0.3.6.0",
+            "fileVersion": "0.3.6.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Jaeger.Thrift.dll": {}
+        }
+      },
+      "Jaeger.Thrift.VendoredThrift/0.3.6": {
+        "runtime": {
+          "lib/netstandard2.0/Jaeger.Thrift.VendoredThrift.dll": {
+            "assemblyVersion": "1.0.0.1",
+            "fileVersion": "1.0.0.1"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Jaeger.Thrift.VendoredThrift.dll": {}
+        }
+      },
       "Microsoft.AspNetCore/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Diagnostics": "2.2.0",
@@ -607,7 +652,7 @@
           "System.Runtime.Caching": "4.5.0",
           "System.Security.Principal.Windows": "4.6.0",
           "System.Text.Encoding.CodePages": "4.5.0",
-          "runtime.native.System.Data.SqlClient.sni": "4.4.0"
+          "runtime.native.System.Data.SqlClient.sni": "4.5.0"
         },
         "runtime": {
           "lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll": {
@@ -1007,6 +1052,36 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "OpenTracing/0.12.0": {
+        "runtime": {
+          "lib/netstandard2.0/OpenTracing.dll": {
+            "assemblyVersion": "0.12.0.0",
+            "fileVersion": "0.12.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/OpenTracing.dll": {}
+        }
+      },
+      "OpenTracing.Contrib.NetCore/0.6.2": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.6",
+          "Microsoft.Extensions.Hosting.Abstractions": "3.0.0",
+          "Microsoft.Extensions.Logging": "3.1.6",
+          "Microsoft.Extensions.Options": "3.1.6",
+          "OpenTracing": "0.12.0",
+          "System.Data.SqlClient": "4.6.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/OpenTracing.Contrib.NetCore.dll": {
+            "assemblyVersion": "0.6.2.0",
+            "fileVersion": "0.6.2.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.0/OpenTracing.Contrib.NetCore.dll": {}
+        }
+      },
       "Polly/7.2.0": {
         "runtime": {
           "lib/netstandard2.0/Polly.dll": {
@@ -1027,7 +1102,7 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
-      "runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "runtime.native.System.Data.SqlClient.sni/4.5.0": {
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
           "runtime.win-x64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -1298,6 +1373,37 @@
             "assemblyVersion": "4.0.1.0",
             "fileVersion": "4.6.26515.6"
           }
+        }
+      },
+      "System.Data.SqlClient/4.6.0": {
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.6.0",
+          "System.Security.Principal.Windows": "4.6.0",
+          "System.Text.Encoding.CodePages": "4.5.0",
+          "runtime.native.System.Data.SqlClient.sni": "4.5.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.6.27110.4"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.6.27110.4"
+          },
+          "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.6.27110.4"
+          }
+        },
+        "compile": {
+          "ref/netcoreapp2.1/System.Data.SqlClient.dll": {}
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -1977,6 +2083,21 @@
         },
         "compile": {
           "MS.AFORO255.Cross.Consul.dll": {}
+        }
+      },
+      "MS.AFORO255.Cross.Jaeger/1.0.0": {
+        "dependencies": {
+          "Jaeger": "0.3.6",
+          "Microsoft.Extensions.Configuration": "3.1.6",
+          "Microsoft.Extensions.Configuration.Binder": "3.1.6",
+          "Microsoft.Extensions.DependencyInjection": "3.1.6",
+          "Microsoft.Extensions.Options": "3.1.6"
+        },
+        "runtime": {
+          "MS.AFORO255.Cross.Jaeger.dll": {}
+        },
+        "compile": {
+          "MS.AFORO255.Cross.Jaeger.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -3608,6 +3729,27 @@
       "path": "consul/0.7.2.6",
       "hashPath": "consul.0.7.2.6.nupkg.sha512"
     },
+    "Jaeger/0.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-94BzgrmFW39qbd4gcJWKbVdC6gWP9nByb7TpxDoBgqazCZ1VUOdi53egxFR+CxJpl1V/oVKrTd4pksEwUy6Jew==",
+      "path": "jaeger/0.3.6",
+      "hashPath": "jaeger.0.3.6.nupkg.sha512"
+    },
+    "Jaeger.Thrift/0.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kPTFJ2GH45ABFJTMnqZ7xeJjVPSYr00t7zN7spMl60Vp5C1+n38rSofNtAWJBp0+TY1Pl0Z2mVPpQ4Z8vty3hw==",
+      "path": "jaeger.thrift/0.3.6",
+      "hashPath": "jaeger.thrift.0.3.6.nupkg.sha512"
+    },
+    "Jaeger.Thrift.VendoredThrift/0.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WSQ8iB52b59jGIatxbzZfPGaORIsTLFc49QcZqfVLjg01n7DyBuffbJ4UICK1ih1suX5kcNJnKMAUkdA25SDdA==",
+      "path": "jaeger.thrift.vendoredthrift/0.3.6",
+      "hashPath": "jaeger.thrift.vendoredthrift.0.3.6.nupkg.sha512"
+    },
     "Microsoft.AspNetCore/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -4098,6 +4240,20 @@
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
     },
+    "OpenTracing/0.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bGp7SSFE6YEUCts3npTvyAVnU4QznXLWKwkhhdlFnCD4bwgtxcNHTfE+KFYUPS0oR8j5L3YfQHUO2Ar2xjFBew==",
+      "path": "opentracing/0.12.0",
+      "hashPath": "opentracing.0.12.0.nupkg.sha512"
+    },
+    "OpenTracing.Contrib.NetCore/0.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IbFuhJr6/39UPGODOHLY4icVOH/xDMhiluVwy+nU1uEaiUo7CdmDr77tXtA74NOeeHx+S2JWgyhHyyUIM4L0cw==",
+      "path": "opentracing.contrib.netcore/0.6.2",
+      "hashPath": "opentracing.contrib.netcore.0.6.2.nupkg.sha512"
+    },
     "Polly/7.2.0": {
       "type": "package",
       "serviceable": true,
@@ -4133,12 +4289,12 @@
       "path": "runtime.native.system/4.3.0",
       "hashPath": "runtime.native.system.4.3.0.nupkg.sha512"
     },
-    "runtime.native.System.Data.SqlClient.sni/4.4.0": {
+    "runtime.native.System.Data.SqlClient.sni/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-A8v6PGmk+UGbfWo5Ixup0lPM4swuSwOiayJExZwKIOjTlFFQIsu3QnDXECosBEyrWSPryxBVrdqtJyhK3BaupQ==",
-      "path": "runtime.native.system.data.sqlclient.sni/4.4.0",
-      "hashPath": "runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+      "sha512": "sha512-AJfX7owAAkMjWQYhoml5IBfXh8UyYPjktn8pK0BFGAdKgBS7HqMz1fw5vdzfZUWfhtTPDGCjgNttt46ZyEmSjg==",
+      "path": "runtime.native.system.data.sqlclient.sni/4.5.0",
+      "hashPath": "runtime.native.system.data.sqlclient.sni.4.5.0.nupkg.sha512"
     },
     "runtime.native.System.IO.Compression/4.1.0": {
       "type": "package",
@@ -4363,6 +4519,13 @@
       "sha512": "sha512-UIFvaFfuKhLr9u5tWMxmVoDPkFeD+Qv8gUuap4aZgVGYSYMdERck4OhLN/2gulAc0nYTEigWXSJNNWshrmxnng==",
       "path": "system.configuration.configurationmanager/4.5.0",
       "hashPath": "system.configuration.configurationmanager.4.5.0.nupkg.sha512"
+    },
+    "System.Data.SqlClient/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gwItUWW1BMCckicFO85c8frFaMK8SGqYn5IeA3GSX4Lmid+CjXETfoHz7Uv+Vx6L0No7iRc/7cBL8gd6o9k9/g==",
+      "path": "system.data.sqlclient/4.6.0",
+      "hashPath": "system.data.sqlclient.4.6.0.nupkg.sha512"
     },
     "System.Diagnostics.Debug/4.3.0": {
       "type": "package",
@@ -4820,6 +4983,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "MS.AFORO255.Cross.Consul/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MS.AFORO255.Cross.Jaeger/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

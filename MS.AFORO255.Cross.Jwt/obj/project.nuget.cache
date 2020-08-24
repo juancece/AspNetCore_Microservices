@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XOJmiiLS0u7CzZQiFirNLQjece3Rnlb5crBmXXP+b262YyFsCXmb+l9Ck72nDB60OfmCpaqa5/DijqvycPq9mA==",
+  "dgSpecHash": "xU9Z5DOKkk7LcMPdluvuXiEWHs+vyj1NHWoukqQjkr8AgwUzBgx8fkprGQOEVf3YRd78rGCPJUy7Zd44LVJpKQ==",
   "success": true,
-  "projectFilePath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj",
+  "projectFilePath": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj",
   "expectedPackageFiles": [
     "/Users/juan/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/3.1.4/microsoft.aspnetcore.authentication.jwtbearer.3.1.4.nupkg.sha512",
     "/Users/juan/.nuget/packages/microsoft.csharp/4.3.0/microsoft.csharp.4.3.0.nupkg.sha512",

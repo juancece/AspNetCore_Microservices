@@ -1,9 +1,166 @@
 {
   "format": 1,
   "restore": {
-    "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Account/MS.AFORO255.Account.csproj": {}
+    "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Account/MS.AFORO255.Account.csproj": {}
   },
   "projects": {
+    "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Account/MS.AFORO255.Account.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Account/MS.AFORO255.Account.csproj",
+        "projectName": "MS.AFORO255.Account",
+        "projectPath": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Account/MS.AFORO255.Account.csproj",
+        "packagesPath": "/Users/juan/.nuget/packages/",
+        "outputPath": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Account/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/juan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Jaeger/MS.AFORO255.Cross.Jaeger.csproj": {
+                "projectPath": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Jaeger/MS.AFORO255.Cross.Jaeger.csproj"
+              },
+              "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj": {
+                "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "OpenTracing.Contrib.NetCore": {
+              "target": "Package",
+              "version": "[0.6.2, )"
+            },
+            "Steeltoe.Extensions.Configuration.ConfigServerCore": {
+              "target": "Package",
+              "version": "[2.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Jaeger/MS.AFORO255.Cross.Jaeger.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Jaeger/MS.AFORO255.Cross.Jaeger.csproj",
+        "projectName": "MS.AFORO255.Cross.Jaeger",
+        "projectPath": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Jaeger/MS.AFORO255.Cross.Jaeger.csproj",
+        "packagesPath": "/Users/juan/.nuget/packages/",
+        "outputPath": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Jaeger/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/juan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Jaeger": {
+              "target": "Package",
+              "version": "[0.3.6, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -88,80 +245,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Account/MS.AFORO255.Account.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Account/MS.AFORO255.Account.csproj",
-        "projectName": "MS.AFORO255.Account",
-        "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Account/MS.AFORO255.Account.csproj",
-        "packagesPath": "/Users/juan/.nuget/packages/",
-        "outputPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Account/obj/",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "/Users/juan/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj": {
-                "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.1.6, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[3.1.6, )"
-            },
-            "Steeltoe.Extensions.Configuration.ConfigServerCore": {
-              "target": "Package",
-              "version": "[2.4.4, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
         }
       }

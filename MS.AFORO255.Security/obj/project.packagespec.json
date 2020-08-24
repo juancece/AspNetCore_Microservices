@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Security/MS.AFORO255.Security.csproj",
+    "projectUniqueName": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Security/MS.AFORO255.Security.csproj",
     "projectName": "MS.AFORO255.Security",
-    "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Security/MS.AFORO255.Security.csproj",
-    "outputPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Security/obj/",
+    "projectPath": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Security/MS.AFORO255.Security.csproj",
+    "outputPath": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Security/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -18,11 +18,14 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
+          "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Jaeger/MS.AFORO255.Cross.Jaeger.csproj": {
+            "projectPath": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Jaeger/MS.AFORO255.Cross.Jaeger.csproj"
+          },
+          "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj": {
+            "projectPath": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj"
+          },
           "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj": {
             "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj"
-          },
-          "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj": {
-            "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.OLD/MS.AFORO255.Cross.Jwt/MS.AFORO255.Cross.Jwt.csproj"
           }
         }
       }
@@ -43,6 +46,10 @@
         "MySql.Data.EntityFrameworkCore": {
           "target": "Package",
           "version": "[8.0.21, )"
+        },
+        "OpenTracing.Contrib.NetCore": {
+          "target": "Package",
+          "version": "[0.6.2, )"
         },
         "Steeltoe.Extensions.Configuration.ConfigServerBase": {
           "target": "Package",

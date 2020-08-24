@@ -11,6 +11,7 @@ using MS.AFORO255.Account.Repository.Data;
 using MS.AFORO255.Account.Service;
 using MS.AFORO255.Cross.Consul.Consul;
 using MS.AFORO255.Cross.Consul.Mvc;
+using MS.AFORO255.Cross.Jaeger.Jaeger;
 
 
 namespace MS.AFORO255.Account
@@ -45,6 +46,9 @@ namespace MS.AFORO255.Account
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddConsul();
             /* End - Consul */
+
+            services.AddJaeger();
+            services.AddOpenTracing();
 
         }
 

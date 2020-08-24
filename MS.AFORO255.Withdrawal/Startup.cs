@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MS.AFORO255.Cross.Consul.Consul;
 using MS.AFORO255.Cross.Consul.Mvc;
+using MS.AFORO255.Cross.Jaeger.Jaeger;
 using MS.AFORO255.Cross.Proxy.Proxy;
 using MS.AFORO255.Cross.RabbitMQ.Src;
 using MS.AFORO255.Withdrawal.RabbitMQ.CommandHandlers;
@@ -60,6 +61,9 @@ namespace MS.AFORO255.Withdrawal
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddConsul();
             /* End - Consul */
+
+            services.AddJaeger();
+            services.AddOpenTracing();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

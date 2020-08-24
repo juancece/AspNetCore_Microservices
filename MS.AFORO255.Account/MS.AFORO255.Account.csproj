@@ -7,11 +7,13 @@
     <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
+      <PackageReference Include="OpenTracing.Contrib.NetCore" Version="0.6.2" />
       <PackageReference Include="Steeltoe.Extensions.Configuration.ConfigServerCore" Version="2.4.4" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\..\MS.AFORO255.Cross.Consul\MS.AFORO255.Cross.Consul.csproj" />
+      <ProjectReference Include="..\MS.AFORO255.Cross.Jaeger\MS.AFORO255.Cross.Jaeger.csproj" />
     </ItemGroup>
 
 
