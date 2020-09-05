@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using MS.AFORO255.Account.DTO;
 using MS.AFORO255.Account.Service;
 using System.Linq;
+using Microsoft.Extensions.Logging;
+using MS.AFORO255.Cross.Metrics.Registry;
 
 namespace MS.AFORO255.Account.Controllers
 {
@@ -9,16 +11,22 @@ namespace MS.AFORO255.Account.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
+        private readonly ILogger<AccountController> _logger;
+        private readonly IMetricsRegistry _metricsRegistry;
         private readonly IAccountService _accountService;
 
-        public AccountController(IAccountService accountService)
+        public AccountController(ILogger<AccountController> logger, IMetricsRegistry metricsRegistry, IAccountService accountService)
         {
+            _logger = logger;
+            _metricsRegistry = metricsRegistry;
             _accountService = accountService;
         }
 
         [HttpGet]
         public IActionResult Get()
         {
+            _metricsRegistry.IncrementFindQuery();
+            _logger.LogInformation("Get Account");
             return Ok(_accountService.GetAll());
         }
 

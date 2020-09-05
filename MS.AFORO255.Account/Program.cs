@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using MS.AFORO255.Cross.Metrics.Metrics;
 using Steeltoe.Extensions.Configuration.ConfigServer;
 
 namespace MS.AFORO255.Account
@@ -21,6 +22,7 @@ namespace MS.AFORO255.Account
                         builder.AddConfigServer(env.EnvironmentName);
                     });
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseAppMetrics();
                 });
     }
 }

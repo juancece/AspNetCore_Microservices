@@ -21,6 +21,9 @@
           "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Jaeger/MS.AFORO255.Cross.Jaeger.csproj": {
             "projectPath": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Jaeger/MS.AFORO255.Cross.Jaeger.csproj"
           },
+          "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Metrics/MS.AFORO255.Cross.Metrics.csproj": {
+            "projectPath": "/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Cross.Metrics/MS.AFORO255.Cross.Metrics.csproj"
+          },
           "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj": {
             "projectPath": "/Users/juan/Development/Projects/WS/Rider/MS.AFORO255.Cross.Consul/MS.AFORO255.Cross.Consul.csproj"
           }
@@ -47,6 +50,10 @@
         "OpenTracing.Contrib.NetCore": {
           "target": "Package",
           "version": "[0.6.2, )"
+        },
+        "Seq.Extensions.Logging": {
+          "target": "Package",
+          "version": "[4.0.2, )"
         },
         "Steeltoe.Extensions.Configuration.ConfigServerCore": {
           "target": "Package",
