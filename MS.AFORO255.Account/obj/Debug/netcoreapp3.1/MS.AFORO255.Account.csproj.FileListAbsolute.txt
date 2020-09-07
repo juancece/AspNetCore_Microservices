@@ -234,3 +234,4 @@
 /Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Account/bin/Debug/netcoreapp3.1/MS.AFORO255.Cross.Metrics.dll
 /Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Account/bin/Debug/netcoreapp3.1/MS.AFORO255.Cross.Metrics.pdb
 /Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Account/bin/Debug/netcoreapp3.1/Seq.Extensions.Logging.dll
+/Users/juan/Development/Projects/WS/Rider/AspNetCore_Microservices/MS.AFORO255.Account/bin/Debug/netcoreapp3.1/appsettings.docker.json
